@@ -1,0 +1,149 @@
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  background-color: #f6f8f7;
+}
+
+button, .btn {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+button.primary, .btn-primary {
+  background: #226d3a;
+  color: #fff;
+  border: none;
+}
+
+button.primary:hover, .btn-primary:hover {
+  background: #1a5230;
+}
+
+button.secondary, .btn-secondary {
+  background: #ffd700;
+  color: #226d3a;
+  border: none;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(34,109,58,0.08);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+/* Index page styling */
+/* Update the index-container class */
+.index-container {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/dccbuilding.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.index-logo {
+  max-width: 200px;
+  margin-bottom: 1.5rem;
+}
+
+.index-title {
+  color: #226d3a;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.index-subtitle {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.index-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(34, 109, 58, 0.1);
+  width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-top: 4px solid #226d3a;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(34, 109, 58, 0.15);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #226d3a;
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-weight: 600;
+  color: #226d3a;
+  margin-bottom: 0.5rem;
+}
+
+.index-cta {
+  margin-top: 2rem;
+}
+
+.index-cta .btn {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  margin: 0 0.5rem;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
